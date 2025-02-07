@@ -18,7 +18,9 @@ address TEXT);
 
 CREATE TABLE Orders(order_id INT AUTO_INCREMENT PRIMARY KEY,
 customer_id INT,
+
 FOREIGN KEY(customer_id)REFERENCES Customers(customer_id),
+
 order_date DATE);
 
 CREATE TABLE Order_Dates(order_detail_id INT AUTO_INCREMENT PRIMARY KEY,
